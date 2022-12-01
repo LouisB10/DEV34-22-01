@@ -1,0 +1,96 @@
+
+@font-face {
+    font-family: "Heading Now";
+    src:  url("/font/HeadingNowTrial-01Thin.ttf");
+}
+
+*{
+    font-family: "Heading Now";
+}
+body{
+   margin: 0;
+   background-color: rgb(240, 240, 240);
+}
+h1{
+    font-size: 100px;
+    margin: 0;
+    text-align: center;
+    letter-spacing: 5px;
+}
+/********************CARTE**********************/
+h2{
+    font-size: 50px;
+    padding: 0;
+    margin-bottom: 30px;
+    margin-top: 50px;
+    letter-spacing: 4px;
+}
+.box{
+    background-color: white;
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.3);
+    width: 500px;
+    height: 250px;
+    border-radius: 15px;
+    display: flex;
+}
+section:nth-child(odd)>div>div>button{background: linear-gradient(to right,#63c0ed,#4f81e3);}
+section:nth-child(even)>div>div>button{background: linear-gradient(to right,#9cd996,#36d2b0);}
+button{
+    width: 150px;
+    height: 40px;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 25px;
+    border-style: hidden;
+    filter: saturate(50%);
+    color: white;
+    letter-spacing: 4px;
+    transition: filter, letter-spacing 1s ease-in-out
+}
+button:hover{
+    letter-spacing: 0px;  
+    filter: saturate(1);
+}
+.test{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+img{
+    width: auto;
+    height: auto;
+    filter: saturate(50%);
+    transition: filter,transform 1s ease-in-out;
+}
+img:hover{
+    filter:saturate(1); 
+    transform:scale(1.2);
+}
+.img-box{
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 0px 10px 10px 0px;
+    display: flex;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+    width: 75%;
+}
+section{
+    margin-top:50px;
+}
+
+/*
+le bleu : #4f81e3
+le bleu clair : #63c0ed
+le vert : #36d2b0
+le vert clair : #9cd996 */
+
